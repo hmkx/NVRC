@@ -1,0 +1,42 @@
+type: NVRC
+config:
+  grid_em:
+    em: ar
+    em_dist: gaussian
+    rate_quant: quant-noise
+    dist_quant: quant-noise
+    quant_mean: true
+    learned_quant: true
+    learned_em: true
+    blk_size: [16, 8, 8]
+    channels: 8
+    depth: 3
+    kernel_size: 5
+    depthwise: true
+  weight_em:
+    em: d-axis
+    em_dist: gaussian
+    rate_quant: quant-noise
+    dist_quant: quant-noise
+    quant_mean: true
+    learned_quant: true
+    learned_em: true
+  grid_meta_em:
+    em: em
+    em_dist: gaussian
+    rate_quant: quant-noise
+    dist_quant: quant-noise
+    quant_mean: true
+    learned_quant: true
+    learned_em: true
+  weight_meta_em:
+    em: em
+    em_dist: gaussian
+    rate_quant: quant-noise
+    dist_quant: quant-noise
+    quant_mean: true
+    learned_quant: true
+    learned_em: true
+  optimize:
+    optimize_rate: true
+    quant_noise: [0.5, 1.0]

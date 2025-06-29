@@ -1,0 +1,5 @@
+dataset_dir: ~/Datasets/PNG/MCL-JCV/1920x1080
+dataset: videoSRC01
+video_size: [-1, -1, -1]
+patch_size: [1, -1, -1]
+fmt: png

@@ -1,0 +1,18 @@
+type: HiNeRV
+config:
+  base_encoding:
+    base_grid_type: v2
+    base_grid_size: [200, 45, 80, 4]
+    base_grid_level: 4
+    base_grid_level_scale: [2., 2., 2., 0.5]
+    base_kernel: [3, 3, 3] 
+  decoder:
+    channels: [512, 256, 128, 64]
+    depths: [3, 3, 3, 1]
+    exps: [4., 4., 4., 4.]
+    kernels: [3, 3, 3, 3]
+    scales_t: [1, 1, 1, 1]
+    scales_hw: [3, 2, 2, 2]
+    paddings: [-1, -1, -1]
+    local_grid_size: [-1, 16]
+    local_grid_level: 3

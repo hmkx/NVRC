@@ -1,0 +1,4 @@
+loss: [0.7, l1, 0.3, ms-ssim]
+metric: [psnr, ms-ssim]
+color_space: RGB
+lamb: 1.0
